@@ -3,6 +3,7 @@ package todos
 import (
 	"log"
 	"net/http"
+	"strconv"
 	"text/template"
 
 	"github.com/Rocko10/Go-TODO-list/src/entity"
@@ -36,6 +37,14 @@ func New(w http.ResponseWriter, r *http.Request) {
 		todo := entity.NewTodo(name)
 		todoService.Add(todo)
 	}
+
+	http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
+}
+
+func Toggle(w http.ResponseWriter, r *http.Request) {
+	id, _ := strconv.Atoi(r.FormValue("todo"))
+
+	todoService.Toggle(id)
 
 	http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 }

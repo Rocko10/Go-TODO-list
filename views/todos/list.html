@@ -12,7 +12,13 @@
         {{if .Todos}}
             <ul>
                 {{range .Todos}}
-                    <li>({{.GetId}}) {{.Name}} : {{.Done}}</li>
+                    <li>
+                        ({{.GetId}}) {{.Name}} : {{.Done}}
+                        <form action="/todos/toggle" method="POST">
+                            <input type="hidden" name="todo" value="{{.GetId}}">
+                            <button type="submit">Toggle</button>
+                        </form>
+                    </li>
                 {{end}}
             </ul>
         {{else}}

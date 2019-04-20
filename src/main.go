@@ -13,6 +13,7 @@ func main() {
 
 	router.HandleFunc("/", todos.List)
 	router.HandleFunc("/todos/new", todos.New).Methods("POST")
+	router.HandleFunc("/todos/toggle", todos.Toggle).Methods("POST")
 
 	http.ListenAndServe(":8080", router)
 }
