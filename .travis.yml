@@ -1,7 +1,4 @@
 language: go
 
 script:
-  - go install
-  - go build
   - cd test && go test -v
-  # Comment
