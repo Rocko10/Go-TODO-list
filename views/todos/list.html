@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>TODO app | Go</title>
+    </head>
+
+    <body>
+        <h1>List of TODOS</h1>
+        <form action="/todos/new" method="POST">
+            <input type="text" name="name" placeholder="New TODO">
+            <button type="submit">Create TODO</button>
+        </form>
+        {{if .Todos}}
+            <ul>
+                {{range .Todos}}
+                    <li>({{.GetId}}) {{.Name}} : {{.Done}}</li>
+                {{end}}
+            </ul>
+        {{else}}
+            <p>No TODOS yet!</p>
+        {{end}}
+    </body>
+</html>
