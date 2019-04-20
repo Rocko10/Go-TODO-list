@@ -18,6 +18,10 @@
                             <input type="hidden" name="todo" value="{{.GetId}}">
                             <button type="submit">Toggle</button>
                         </form>
+                        <form action="/todos/delete" method="POST">
+                            <input type="hidden" name="todo" value="{{.GetId}}">
+                            <button type="submit">Delete</button>
+                        </form>
                     </li>
                 {{end}}
             </ul>
