@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"text/template"
 
-	"github.com/Rocko10/todoApp/src/entity"
-	"github.com/Rocko10/todoApp/src/gateway"
-	"github.com/Rocko10/todoApp/src/service"
+	"github.com/Rocko10/Go-TODO-list/src/entity"
+	"github.com/Rocko10/Go-TODO-list/src/gateway"
+	"github.com/Rocko10/Go-TODO-list/src/service"
 )
 
 type listData struct {

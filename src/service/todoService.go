@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/Rocko10/todoApp/src/entity"
-	"github.com/Rocko10/todoApp/src/gateway"
+	"github.com/Rocko10/Go-TODO-list/src/entity"
+	"github.com/Rocko10/Go-TODO-list/src/gateway"
 )
 
 type TodoService struct {

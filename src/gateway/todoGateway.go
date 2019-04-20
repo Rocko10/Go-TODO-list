@@ -1,6 +1,6 @@
 package gateway
 
-import "github.com/Rocko10/todoApp/src/entity"
+import "github.com/Rocko10/Go-TODO-list/src/entity"
 
 type TodoGateway interface {
 	GetAll() []entity.Todo

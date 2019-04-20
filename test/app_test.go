@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 
-	"github.com/Rocko10/todoApp/src/entity"
-	"github.com/Rocko10/todoApp/src/gateway"
-	"github.com/Rocko10/todoApp/src/service"
+	"github.com/Rocko10/Go-TODO-list/src/entity"
+	"github.com/Rocko10/Go-TODO-list/src/gateway"
+	"github.com/Rocko10/Go-TODO-list/src/service"
 )
 
 func TestTodoStruct(t *testing.T) {

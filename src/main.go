@@ -5,7 +5,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/Rocko10/todoApp/src/handler/todos"
+	"github.com/Rocko10/Go-TODO-list/src/handler/todos"
 )
 
 func main() {

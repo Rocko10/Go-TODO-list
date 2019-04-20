@@ -3,7 +3,7 @@ package gateway
 import (
 	"errors"
 
-	"github.com/Rocko10/todoApp/src/entity"
+	"github.com/Rocko10/Go-TODO-list/src/entity"
 )
 
 type TodoRepo struct {
